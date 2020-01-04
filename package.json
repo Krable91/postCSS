@@ -1,0 +1,11 @@
+{
+  "name": "postCSS",
+  "version": "1.0.0",
+  "description": "CSS4, PostCSS, Grid, Flexbox, CSSNext",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
