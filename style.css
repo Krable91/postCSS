@@ -5,14 +5,14 @@ li:not(.target){
     background-color: green;
 }*/
 
-:root{
+/*:root{
     --awesomeColor: #2980b9;
-    /*--hugeSize: 300px*/
+    --hugeSize: 300px
 }
 
-li:first-child a{
+/*li:first-child a{
     color:var(--awesomeColor);
-    /*font-size:var(--hugeSize);*/
+    font-size:var(--hugeSize);
 }
 
 @custom-selector :--headers h1, h2, h3, h4, h5, h6;
@@ -20,4 +20,23 @@ li:first-child a{
 
 :--headers {
     color: #8e44ad;
+}*/
+@custom-media --a (width <= 768px);
+@custom-media --b (768px < width <= 1024px);
+@custom-media --c (width > 1024px) and (width <= 1600px);
+
+@media (--a) {
+    body{
+        background-color: red;
+    }
+}
+@media (--b) {
+    body{
+        background-color: blue;
+    }
+}
+@media (--c) {
+    body{
+        background-color: green;
+    }
 }
